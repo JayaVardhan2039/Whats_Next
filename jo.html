@@ -1,0 +1,390 @@
+<div class="job2" id="job2">
+    <div class="jaya_co-section2">
+      <div class="container2">
+        <div class="row2 justify-content-between2">
+          <div class="col-lg-122 mb-52">
+            <div style="max-width: 1000px; margin: 50px auto; background: #fff; padding: 20px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+              <h1 style="text-align: center; color: #0077b6;">Career Guidance for Working Professionals</h1>
+              <form id="careerForm2" style="margin-bottom: 30px;" enctype="multipart/form-data">
+                <div class="form-group2" style="margin-bottom: 15px;">
+                    <label for="careerStage2" style="display: block; margin-bottom: 5px; font-weight: bold; color: #0077b6;">Current Stage:</label>
+                    <select id="careerStage2" name="careerStage2" style="width: 100%; padding: 12px; border: 1px solid #0077b6; border-radius: 10px; background-color: #e0f7fa;">
+                        <option value="">Select your current stage</option>
+                        <option value="entryLevel2">Entry Level</option>
+                        <option value="midLevel2">Mid Level</option>
+                    </select>
+                </div>
+
+                <div class="form-group2" style="margin-bottom: 15px;">
+                    <label for="interests22" style="display: block; margin-bottom: 5px; font-weight: bold; color: #0077b6;">Interests:</label>
+                    <select id="interests22" name="interests22" style="width: 100%; padding: 12px; border: 1px solid #0077b6; border-radius: 10px; background-color: #e0f7fa;">
+                        <option value="">Select your interests</option>
+                    </select>
+                </div>
+
+                <div class="form-group2" style="margin-bottom: 15px;">
+                    <label for="experience" style="display: block; margin-bottom: 5px; font-weight: bold; color: #0077b6;">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" style="width: 100%; padding: 12px; border: 1px solid #0077b6; border-radius: 10px; background-color: #e0f7fa;" min="0">
+                </div>
+
+                <div class="form-group2" style="margin-bottom: 15px;">
+                    <label for="expertise" style="display: block; margin-bottom: 5px; font-weight: bold; color: #0077b6;">Area of Expertise:</label>
+                    <input type="text" id="expertise" name="expertise" style="width: 100%; padding: 12px; border: 1px solid #0077b6; border-radius: 10px; background-color: #e0f7fa;">
+                </div>
+
+                <div class="form-group2" style="margin-bottom: 15px;">
+                    <label for="resume" style="display: block; margin-bottom: 5px; font-weight: bold; color: #0077b6;">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" style="width: 100%; padding: 12px; border: 1px solid #0077b6; border-radius: 10px; background-color: #e0f7fa;">
+                </div>
+
+                <button type="button" id="getNextSteps2" style="display: inline-block; width: 100%; padding: 12px; background-color: #0077b6; color: white; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; box-shadow: 0 5px 10px rgba(0, 119, 182, 0.3); transition: background-color 0.3s ease;">Get Next Steps</button>
+            </form>
+  
+              <!-- Loading spinner -->
+              <div id="loadingSpinner2" style="display: none; text-align: center; margin-bottom: 20px;">
+                <div class="spinner" style="width: 50px; height: 50px; border: 6px solid #e0f7fa; border-top: 6px solid #0077b6; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+              </div>
+  
+              <div id="results2" style="margin-top: 20px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Style for spinner animation -->
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  
+  <!-- Script Section -->
+  <script>
+    const careerdata22 = {
+      entryLevel2: {
+        interests22: ["Engineering", "Medicine", "Business", "Arts", "Science", "Law", "Education", "Environmental Studies"],
+        paths2: {
+            Engineering: [
+                {
+                    career2: "Junior Software Engineer",
+                    description2: "Junior Software Engineers assist in developing and maintaining software applications.",
+                    courses2: ["Advanced Programming", "Software Engineering", "Database Management", "Web Development", "Data Structures"],
+                    nextSteps2: ["Mid-Level Software Engineer", "Senior Software Engineer", "Technical Lead"]
+                },
+                {
+                    career2: "Mechanical Engineer",
+                    description2: "Mechanical Engineers design, analyze, and manufacture mechanical systems.",
+                    courses2: ["Advanced Mathematics", "Mechanical Design", "CAD Software", "Thermodynamics", "Fluid Mechanics"],
+                    nextSteps2: ["Senior Mechanical Engineer", "Project Manager", "Mechanical Engineering Manager"]
+                }
+            ],
+            Medicine: [
+                {
+                    career2: "Registered Nurse",
+                    description2: "Registered Nurses provide medical care and support to patients.",
+                    courses2: ["Advanced Nursing Practices", "Clinical Nursing", "Healthcare Management", "Patient Care"],
+                    nextSteps2: ["Nurse Practitioner", "Clinical Nurse Specialist", "Nurse Manager"]
+                },
+                {
+                    career2: "Medical Laboratory Technician",
+                    description2: "Medical Laboratory Technicians perform lab tests to diagnose and treat diseases.",
+                    courses2: ["Laboratory Techniques", "Pathology", "Biochemistry", "Microbiology"],
+                    nextSteps2: ["Medical Laboratory Scientist", "Clinical Laboratory Manager"]
+                }
+            ],
+            Business: [
+                {
+                    career2: "Business Analyst",
+                    description2: "Business Analysts evaluate business processes and recommend improvements.",
+                    courses2: ["Business Process Management", "Data Analysis", "Project Management", "Financial Analysis"],
+                    nextSteps2: ["Senior Business Analyst", "Project Manager", "Business Consultant"]
+                },
+                {
+                    career2: "Marketing Coordinator",
+                    description2: "Marketing Coordinators support marketing campaigns and initiatives.",
+                    courses2: ["Digital Marketing", "Market Research", "Content Creation", "SEO"],
+                    nextSteps2: ["Marketing Manager", "Brand Manager", "Digital Marketing Manager"]
+                }
+            ],
+            Arts: [
+                {
+                    career2: "Graphic Designer",
+                    description2: "Graphic Designers create visual content for various media.",
+                    courses2: ["Advanced Graphic Design", "Adobe Creative Suite", "Typography", "UX/UI Design"],
+                    nextSteps2: ["Senior Graphic Designer", "Art Director", "Creative Director"]
+                },
+                {
+                    career2: "Content Writer",
+                    description2: "Content Writers produce engaging content for websites, blogs, and social media.",
+                    courses2: ["Creative Writing", "SEO Writing", "Content Strategy", "Digital Marketing"],
+                    nextSteps2: ["Senior Content Writer", "Content Manager", "Editorial Director"]
+                }
+            ],
+            Science: [
+                {
+                    career2: "Research Scientist",
+                    description2: "Research Scientists conduct experiments and analyze data to advance knowledge.",
+                    courses2: ["Research Methods", "Data Analysis", "Laboratory Techniques", "Scientific Writing"],
+                    nextSteps2: ["Senior Research Scientist", "Research Manager", "Principal Investigator"]
+                },
+                {
+                    career2: "Data Analyst",
+                    description2: "Data Analysts interpret data to help organizations make informed decisions.",
+                    courses2: ["Data Analysis", "Statistics", "Data Visualization", "SQL"],
+                    nextSteps2: ["Senior Data Analyst", "Data Scientist", "Business Intelligence Analyst"]
+                }
+            ],
+            Law: [
+                {
+                    career2: "Paralegal",
+                    description2: "Paralegals assist lawyers by conducting legal research and drafting documents.",
+                    courses2: ["Legal Research", "Legal Writing", "Civil Procedure", "Contract Law"],
+                    nextSteps2: ["Senior Paralegal", "Legal Consultant", "Lawyer (with further education)"]
+                },
+                {
+                    career2: "Compliance Officer",
+                    description2: "Compliance Officers ensure that organizations adhere to legal regulations.",
+                    courses2: ["Compliance Management", "Corporate Law", "Risk Management", "Ethics"],
+                    nextSteps2: ["Senior Compliance Officer", "Compliance Manager", "Chief Compliance Officer"]
+                }
+            ],
+            Education: [
+                {
+                    career2: "Instructional Designer",
+                    description2: "Instructional Designers create educational programs and materials.",
+                    courses2: ["Instructional Design", "Educational Technology", "Curriculum Development", "Adult Learning Theory"],
+                    nextSteps2: ["Senior Instructional Designer", "E-Learning Specialist", "Director of Instructional Design"]
+                },
+                {
+                    career2: "Corporate Trainer",
+                    description2: "Corporate Trainers provide training and development for employees.",
+                    courses2: ["Training and Development", "Public Speaking", "Learning Management Systems", "Coaching"],
+                    nextSteps2: ["Senior Corporate Trainer", "Training Manager", "Director of Training and Development"]
+                }
+            ],
+            EnvironmentalStudies: [
+                {
+                    career2: "Environmental Consultant",
+                    description2: "Environmental Consultants provide advice on environmental issues.",
+                    courses2: ["Environmental Science", "Sustainability", "Environmental Policy", "Impact Assessment"],
+                    nextSteps2: ["Senior Environmental Consultant", "Environmental Project Manager", "Director of Environmental Services"]
+                },
+                {
+                    career2: "Sustainability Specialist",
+                    description2: "Sustainability Specialists develop strategies to promote sustainable practices.",
+                    courses2: ["Sustainability Management", "Environmental Science", "Corporate Social Responsibility", "Energy Management"],
+                    nextSteps2: ["Senior Sustainability Specialist", "Sustainability Manager", "Director of Sustainability"]
+                }
+            ]
+        }
+      },
+      midLevel2: {
+        interests22: ["Engineering", "Medicine", "Business", "Arts", "Science", "Law", "Education", "Environmental Studies"],
+        paths2: {
+            Engineering: [
+                {
+                    career2: "Senior Software Engineer",
+                    description2: "Senior Software Engineers lead software development projects.",
+                    courses2: ["Advanced Algorithms", "System Design", "Project Management", "Software Architecture"],
+                    nextSteps2: ["Technical Lead", "Engineering Manager", "CTO"]
+                },
+                {
+                    career2: "Project Manager",
+                    description2: "Project Managers oversee engineering projects and ensure they meet goals.",
+                    courses2: ["Project Management Professional (PMP)", "Agile Methodologies", "Leadership", "Risk Management"],
+                    nextSteps2: ["Senior Project Manager", "Program Manager", "Director of Engineering"]
+                }
+            ],
+            Medicine: [
+                {
+                    career2: "Nurse Practitioner",
+                    description2: "Nurse Practitioners provide advanced healthcare services and prescribe medications.",
+                    courses2: ["Advanced Practice Nursing", "Pharmacology", "Health Assessment", "Primary Care"],
+                    nextSteps2: ["Clinical Nurse Specialist", "Nurse Educator", "Director of Nursing"]
+                },
+                {
+                    career2: "Medical Laboratory Scientist",
+                    description2: "Medical Laboratory Scientists perform complex tests to diagnose diseases.",
+                    courses2: ["Clinical Chemistry", "Hematology", "Immunology", "Molecular Diagnostics"],
+                    nextSteps2: ["Laboratory Manager", "Clinical Pathologist (with further education)"]
+                }
+            ],
+            Business: [
+                {
+                    career2: "Product Manager",
+                    description2: "Product Managers lead the development and launch of products.",
+                    courses2: ["Product Management", "Agile Product Development", "Market Research", "Business Strategy"],
+                    nextSteps2: ["Senior Product Manager", "Director of Product", "VP of Product"]
+                },
+                {
+                    career2: "Operations Manager",
+                    description2: "Operations Managers oversee business operations to ensure efficiency.",
+                    courses2: ["Operations Management", "Supply Chain Management", "Lean Six Sigma", "Financial Analysis"],
+                    nextSteps2: ["Senior Operations Manager", "Director of Operations", "COO"]
+                }
+            ],
+            Arts: [
+                {
+                    career2: "Art Director",
+                    description2: "Art Directors oversee the visual style and content of media projects.",
+                    courses2: ["Art Direction", "Creative Leadership", "Graphic Design", "Advertising"],
+                    nextSteps2: ["Creative Director", "Executive Creative Director", "Chief Creative Officer"]
+                },
+                {
+                    career2: "Senior Content Writer",
+                    description2: "Senior Content Writers produce high-quality content and lead writing teams.",
+                    courses2: ["Content Strategy", "Advanced SEO", "Team Management", "Brand Voice Development"],
+                    nextSteps2: ["Content Manager", "Editorial Director", "Head of Content"]
+                }
+            ],
+            Science: [
+                {
+                    career2: "Data Scientist",
+                    description2: "Data Scientists analyze complex data to extract insights and inform decisions.",
+                    courses2: ["Machine Learning", "Big Data Analytics", "Statistical Modeling", "Python for Data Science"],
+                    nextSteps2: ["Lead Data Scientist", "Data Science Manager", "Chief Data Officer"]
+                },
+                {
+                    career2: "Principal Investigator",
+                    description2: "Principal Investigators lead research projects and manage research teams.",
+                    courses2: ["Advanced Research Methods", "Grant Writing", "Project Management", "Scientific Leadership"],
+                    nextSteps2: ["Research Director", "Chief Scientific Officer", "Tenured Professor (in academia)"]
+                }
+            ],
+            Law: [
+                {
+                    career2: "Legal Consultant",
+                    description2: "Legal Consultants provide expert advice on legal matters.",
+                    courses2: ["Corporate Law", "Contract Negotiation", "Risk Management", "Compliance"],
+                    nextSteps2: ["Senior Legal Consultant", "Head of Legal Consulting", "General Counsel"]
+                },
+                {
+                    career2: "Compliance Manager",
+                    description2: "Compliance Managers ensure organizational adherence to laws and regulations.",
+                    courses2: ["Advanced Compliance", "Ethics and Governance", "Regulatory Affairs", "Risk Management"],
+                    nextSteps2: ["Director of Compliance", "Chief Compliance Officer", "General Counsel"]
+                }
+            ],
+            Education: [
+                {
+                    career2: "Training and Development Manager",
+                    description2: "Training and Development Managers design and oversee employee training programs.",
+                    courses2: ["Leadership Development", "Instructional Design", "Performance Management", "Learning Analytics"],
+                    nextSteps2: ["Director of Training and Development", "Chief Learning Officer"]
+                },
+                {
+                    career2: "E-Learning Specialist",
+                    description2: "E-Learning Specialists create and manage online learning programs.",
+                    courses2: ["E-Learning Development", "Learning Management Systems", "Multimedia Design", "Content Authoring"],
+                    nextSteps2: ["Senior E-Learning Specialist", "E-Learning Manager", "Director of E-Learning"]
+                }
+            ],
+            EnvironmentalStudies: [
+                {
+                    career2: "Senior Environmental Consultant",
+                    description2: "Senior Environmental Consultants lead projects and provide expert environmental advice.",
+                    courses2: ["Environmental Law", "Sustainability", "Project Management", "Environmental Impact Assessment"],
+                    nextSteps2: ["Environmental Project Manager", "Director of Environmental Services"]
+                },
+                {
+                    career2: "Sustainability Manager",
+                    description2: "Sustainability Managers develop and implement sustainability strategies.",
+                    courses2: ["Corporate Sustainability", "Energy Management", "Environmental Economics", "CSR Strategy"],
+                    nextSteps2: ["Director of Sustainability", "Chief Sustainability Officer"]
+                }
+            ]
+        }
+      }
+    };
+  
+    document.getElementById('careerStage2').addEventListener('change', function() {
+      const careerStage2 = this.value;
+      const interestsSelect2 = document.getElementById('interests22');
+      interestsSelect2.innerHTML = '<option value="">Select your interests</option>';
+  
+      if (careerStage2 && careerdata22[careerStage2]) {
+        careerdata22[careerStage2].interests22.forEach(interest2 => {
+          const option2 = document.createElement('option');
+          option2.value = interest2;
+          option2.textContent = interest2;
+          interestsSelect2.appendChild(option2);
+        });
+      }
+    });
+  
+    document.getElementById('getNextSteps2').addEventListener('click', function() {
+      const careerStage2 = document.getElementById('careerStage2').value;
+      const interests22 = document.getElementById('interests22').value;
+      const experience = document.getElementById('experience').value;
+      const expertise = document.getElementById('expertise').value;
+      const resume = document.getElementById('resume').files[0];
+      const resultsDiv2 = document.getElementById('results2');
+      const loadingSpinner2 = document.getElementById('loadingSpinner2');
+  
+      resultsDiv2.innerHTML = '';
+      loadingSpinner2.style.display = 'block';
+  
+      // Simulate a delay to show the loading spinner
+      setTimeout(function() {
+        loadingSpinner2.style.display = 'none';
+  
+        if (careerStage2 && interests22 && careerdata22[careerStage2]) {
+          const paths2 = careerdata22[careerStage2].paths2[interests22];
+  
+          if (paths2) {
+            paths2.forEach(path2 => {
+              const careerDiv2 = document.createElement('div');
+              careerDiv2.style.border = '1px solid #0077b6';
+              careerDiv2.style.borderRadius = '4px';
+              careerDiv2.style.padding = '10px';
+              careerDiv2.style.marginBottom = '10px';
+              careerDiv2.style.backgroundColor = '#e0f7fa';
+  
+              const careerTitle2 = document.createElement('h3');
+              careerTitle2.textContent = path2.career2;
+              careerTitle2.style.color = '#0077b6';
+              careerDiv2.appendChild(careerTitle2);
+  
+              const descriptionParagraph2 = document.createElement('p');
+              descriptionParagraph2.textContent = path2.description2;
+              descriptionParagraph2.style.color = '#333';
+              careerDiv2.appendChild(descriptionParagraph2);
+  
+              const coursesList2 = document.createElement('ul');
+              path2.courses2.forEach(course2 => {
+                const courseItem2 = document.createElement('li');
+                courseItem2.textContent = course2;
+                coursesList2.appendChild(courseItem2);
+              });
+              careerDiv2.appendChild(coursesList2);
+  
+              const nextStepsParagraph2 = document.createElement('p');
+              nextStepsParagraph2.textContent = 'Next Steps: ' + path2.nextSteps2.join(', ');
+              nextStepsParagraph2.style.fontWeight = 'bold';
+              nextStepsParagraph2.style.color = '#0077b6';
+              careerDiv2.appendChild(nextStepsParagraph2);
+  
+              // Display user inputs (experience and expertise)
+              const experienceParagraph = document.createElement('p');
+              experienceParagraph.textContent = 'Experience: ' + experience + ' years';
+              careerDiv2.appendChild(experienceParagraph);
+  
+              const expertiseParagraph = document.createElement('p');
+              expertiseParagraph.textContent = 'Expertise: ' + expertise;
+              careerDiv2.appendChild(expertiseParagraph);
+  
+              resultsDiv2.appendChild(careerDiv2);
+            });
+          } else {
+            resultsDiv2.textContent = 'No career paths available for the selected interests.';
+          }
+        } else {
+          resultsDiv2.textContent = 'Please select your current stage, interests, experience, and expertise.';
+        }
+      }, 2000); // 2-second delay
+    });
+  </script>
+  

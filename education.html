@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="">
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>What's next by Jaya Vardhan</title>
+  <style>
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      /* Ensures text doesn't overflow */
+      border-right: 0.08em solid #333;
+      /* Blinking cursor style */
+      white-space: nowrap;
+      /* Prevents text from wrapping */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Basic styling */
+    .js-clone-nav {
+      list-style: none;
+      padding: 0;
+    }
+
+    .js-clone-nav li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .js-clone-nav li a {
+      position: relative;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .js-clone-nav li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      border-bottom: 1px dotted #7289DA;
+      /* Dotted underline color */
+      transition: background-color 0.3s, width 0.3s;
+      /* Smooth transition */
+    }
+
+    .js-clone-nav li.current a {
+      color: #eff1f7;
+      /* Discord's primary color */
+    }
+
+    .js-clone-nav li.current a::after {
+      background-color: #f2f3f8;
+      /* Dotted underline color */
+      width: 100%;
+      /* Expand underline to match text length */
+    }
+
+    .js-clone-nav li.current a:hover {
+      color: #010514;
+      /* Highlighted text color */
+    }
+
+    /* Additional styling for text color */
+    .js-clone-nav li.current a {
+      color: #fff;
+      /* White text color */
+    }
+  </style>
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+  <style>
+    h1.mb-4.heading.text-white.typewriter {
+      font-family: 'Roboto', sans-serif; /* Use the font you imported */
+      font-size: 2.5em; /* Adjust the font size as needed */
+      color: aqua; /* Change the color if needed */
+       /* Ensure text is uppercase */
+      text-align: center; /* Center align text if needed */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+    const name = localStorage.getItem('username'); // Retrieve the name from local storage
+    if (name) {
+      console.log(`Welcome, ${name}!`); // Use the name as needed
+      // You can also update the DOM or perform other actions with the name
+      document.getElementById('welcomeMessage').textContent = `Welcome, ${name}!`;
+    } else {
+      console.log('No user logged in.');
+    }
+  });
+  </script>
+  <nav class="site-nav mb-5">
+    <div class="pb-2 top-bar mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-9">
+            <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> <span
+                class="d-none d-lg-inline-block">Have a question?</span></a>
+            <a href="#" class="small mr-3"><span class="icon-phone mr-2"></span> <span
+                class="d-none d-lg-inline-block">0123456789</span></a>
+            <a href="#" class="small mr-3"><span class="icon-envelope mr-2"></span> <span
+                class="d-none d-lg-inline-block">whatsnext@gmail.com</span></a>
+          </div>
+          <div id="welcomeMessage" style="color:aqua; text-transform: uppercase;">!</div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-right">
+          <a href="index2.html" class="logo menu-absolute m-0">What's NEXT<span class="text-primary">?</span></a>
+
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu text-primary">
+            <li><a href="index2.html">Career Advice</a></li>
+            <li><a href="jobs.html">Jobs or Internships</a></li>
+            <li><a href="education.html">Education</a></li>
+          </ul>
+          <button type="submit" id="logout" class="btn btn-sm btn-secondary">SignOut</button>
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jaya_co-hero overlay" style="background-image: url('images/xx.jpg');">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h1 class="mb-4 heading text-white typewriter" data-aos="fade-up" data-aos-delay="100">Explore Our Blog on
+                Education<br> and skill</h1>
+              <p id="scrollButton" class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#"
+                  class="btn btn-secondary">Explore this page</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jaya_co-section">
+
+
+<div id="content-container" class="speed container">
+  <!-- Content will be dynamically generated here -->
+</div>
+
+<script>
+  // Educational content data
+  const educationalContent = [
+  {
+    title: "The Importance of Career Guidance in High Schools",
+    image: "/pictures/pic1.jpg",
+    description: "Discusses the impact of effective career guidance programs on high school students, helping them make informed decisions about their future.",
+    accordions: [
+      {
+        title: "Early Exploration of Career Options",
+        image: "/pictures/pic2.jpg",
+        content: [
+          "Introduction to Diverse Career Paths: Career guidance introduces students to a wide range of career options beyond traditional choices, helping them explore their interests and aptitudes.",
+          "Awareness of Emerging Industries: Guidance programs educate students about emerging industries and job trends, preparing them for evolving job markets."
+        ]
+      },
+      {
+        title: "Personalized Career Assessments",
+        image: "/pictures/pic3.jpg",
+        content: [
+          "Goal Setting: Career guidance assists students in setting academic and career goals, creating actionable plans to achieve them.",
+          "Course Selection: Advisors recommend courses that align with students' career aspirations, ensuring they meet college admission requirements and career prerequisites."
+        ]
+      },
+      {
+        title: "Academic and Career Planning",
+        image: "/pictures/pic4.jpg",
+        content: [
+          "Goal Setting: Career guidance assists students in setting academic and career goals, creating actionable plans to achieve them.",
+          "Course Selection: Advisors recommend courses that align with students' career aspirations, ensuring they meet college admission requirements and career prerequisites."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Exploring STEM Careers",
+    image: "/pictures/pic6.jpg",
+    description: "Explores various careers in Science, Technology, Engineering, and Mathematics (STEM) fields, highlighting opportunities and pathways for students.",
+    accordions: [
+      {
+        title: "Introduction to STEM Fields",
+        image: "/pictures/pic5.jpg",
+        content: [
+          "Overview of STEM Disciplines: Provides an introduction to the diverse fields within STEM, including biology, engineering, computer science, and more.",
+          "Importance of STEM Education: Discusses the importance of STEM education in preparing students for future technological advancements."
+        ]
+      },
+      {
+        title: "Skills and Qualifications",
+        image: "/pictures/pic7.jpg",
+        content: [
+          "Essential Skills for STEM Careers: Identifies key skills such as problem-solving, critical thinking, and collaboration needed for success in STEM fields.",
+          "Educational Requirements: Outlines the educational pathways, from undergraduate degrees to specialized certifications, required for various STEM professions."
+        ]
+      },
+      {
+        title: "Career Opportunities in STEM",
+        image: "/pictures/pic8.jpg",
+        content: [
+          "Emerging Trends in STEM Careers: Highlights current and future job opportunities in fields like artificial intelligence, renewable energy, and biotechnology.",
+          "Industry Insights: Provides insights into leading companies and organizations within the STEM sector, offering internship and career opportunities."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Preparing for College Admissions",
+    image: "/pictures/pic9.jpg",
+    description: "Guides students through the college admissions process, focusing on academic preparation, standardized testing, and extracurricular activities.",
+    accordions: [
+      {
+        title: "Academic Excellence",
+        image: "/pictures/pic10.jpg",
+        content: [
+          "GPA and Course Selection: Discusses the importance of maintaining a strong GPA and selecting rigorous coursework to impress college admissions committees.",
+          "Advanced Placement (AP) and International Baccalaureate (IB) Programs: Examines the benefits of AP and IB courses in demonstrating academic readiness."
+        ]
+      },
+      {
+        title: "Standardized Testing",
+        image: "/pictures/pic11.jpg",
+        content: [
+          "SAT and ACT Preparation: Provides strategies and resources for preparing for standardized tests, including practice exams and test-taking tips.",
+          "Score Interpretation: Explains how colleges use SAT and ACT scores in the admissions process and offers guidance on score improvement."
+        ]
+      },
+      {
+        title: "Extracurricular Activities",
+        image: "/pictures/pic12.jpg",
+        content: [
+          "Importance of Extracurricular Involvement: Highlights how participation in clubs, sports, and community service enhances college applications.",
+          "Leadership and Initiative: Emphasizes the value of demonstrating leadership skills and taking initiative in extracurricular pursuits."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Navigating Career Choices",
+    image: "/pictures/pic13.jpg",
+    description: "Assists students in making informed career choices through self-assessment, exploration of interests, and understanding of market trends.",
+    accordions: [
+      {
+        title: "Self-Assessment Tools",
+        image: "/pictures/pic14.jpg",
+        content: [
+          "Personality Tests and Career Inventories: Introduces students to tools that assess their strengths, interests, and values to align with career paths.",
+          "Skills Profiling: Evaluates students' skills and aptitudes to identify suitable career options and development areas."
+        ]
+      },
+      {
+        title: "Exploring Career Options",
+        image: "/pictures/pic15.jpg",
+        content: [
+          "Industry Research: Encourages students to research industries and professions of interest to understand job responsibilities and career prospects.",
+          "Networking and Informational Interviews: Advises on networking strategies and conducting informational interviews to gain insights from professionals."
+        ]
+      },
+      {
+        title: "Preparing for Career Success",
+        image: "/pictures/pic16.jpg",
+        content: [
+          "Professional Development: Provides guidance on building a professional network, enhancing communication skills, and developing a personal brand.",
+          "Internships and Work Experience: Discusses the benefits of internships and practical work experience in gaining industry-specific skills and insights."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Financial Literacy and Career Planning",
+    image: "/pictures/pic17.jpg",
+    description: "Educates students on financial management skills essential for navigating career choices, budgeting, and planning for future financial stability.",
+    accordions: [
+      {
+        title: "Budgeting Basics",
+        image: "/pictures/pic18.jpg",
+        content: [
+          "Income and Expenses: Teaches students how to create a budget based on income sources, such as part-time jobs and allowances, and expenses like education costs and personal expenses.",
+          "Saving and Investing: Introduces saving strategies and basic concepts of investing to help students build financial security and wealth over time."
+        ]
+      },
+      {
+        title: "Career Planning and Salary Expectations",
+        image: "/pictures/pic19.jpg",
+        content: [
+          "Understanding Salary Structures: Explains how salaries are determined based on education, skills, and experience in different industries and professions.",
+          "Negotiating Job Offers: Provides tips on negotiating salary and benefits packages to maximize earnings and career advancement opportunities."
+        ]
+      },
+      {
+        title: "Debt Management and Credit Scores",
+        image: "/pictures/pic20.jpg",
+        content: [
+          "Managing Student Loans: Guides students on responsible borrowing, repayment options, and strategies to minimize student loan debt.",
+          "Building and Maintaining Credit: Discusses the importance of credit scores, credit reports, and responsible credit card use for financial health."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Entrepreneurship and Innovation",
+    image: "/pictures/pic21.jpg",
+    description: "Inspires students to explore entrepreneurship as a career path, fostering creativity, problem-solving skills, and business acumen.",
+    accordions: [
+      {
+        title: "Introduction to Entrepreneurship",
+        image: "/pictures/pic22.jpg",
+        content: [
+          "Entrepreneurial Mindset: Encourages students to develop an innovative mindset, identify opportunities, and solve real-world problems through entrepreneurship.",
+          "Risk and Reward: Discusses the risks and rewards associated with starting and managing a business, including financial implications and personal fulfillment."
+        ]
+      },
+      {
+        title: "Business Planning and Strategy",
+        image: "/pictures/pic23.jpg",
+        content: [
+          "Writing a Business Plan: Guides students through the process of writing a comprehensive business plan, including market research, financial projections, and marketing strategies.",
+          "Strategic Planning: Introduces strategic management concepts and techniques to help students plan and execute business initiatives effectively."
+        ]
+      },
+      {
+        title: "Entrepreneurial Success Stories",
+        image: "/pictures/pic24.jpg",
+        content: [
+          "Case Studies and Inspirational Stories: Showcases successful entrepreneurs and their journeys, highlighting lessons learned, challenges overcome, and innovative solutions.",
+          "Mentorship and Networking: Emphasizes the importance of mentorship and networking in entrepreneurship, providing guidance on building supportive relationships."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Diversity and Inclusion in the Workplace",
+    image: "/pictures/pic25.jpg",
+    description: "Promotes understanding and appreciation of diversity in the workplace, emphasizing inclusive practices and the benefits of a diverse workforce.",
+    accordions: [
+      {
+        title: "Understanding Diversity and Inclusion",
+        image: "/pictures/pic26.jpg",
+        content: [
+          "Diversity in the Workplace: Explores the value of diversity, including different backgrounds, experiences, and perspectives, in fostering innovation and creativity.",
+          "Inclusive Practices: Discusses strategies for creating an inclusive work environment where all employees feel respected, valued, and empowered."
+        ]
+      },
+      {
+        title: "Promoting Equity and Fairness",
+        image: "/pictures/pic27.jpg",
+        content: [
+          "Equal Employment Opportunities: Examines legal and ethical considerations related to promoting equal employment opportunities and preventing discrimination.",
+          "Fair Hiring Practices: Provides guidance on fair hiring practices, including unbiased recruitment processes and inclusive job descriptions."
+        ]
+      },
+      {
+        title: "Cultural Competence and Sensitivity",
+        image: "/pictures/pic28.jpg",
+        content: [
+          "Cultural Awareness: Encourages cultural competence and sensitivity in the workplace, enhancing communication, collaboration, and teamwork among diverse teams.",
+          "Training and Development: Discusses the importance of diversity training programs and ongoing professional development to promote cultural understanding."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Healthcare Careers and Opportunities",
+    image: "/pictures/pic29.jpg",
+    description: "Explores various careers in the healthcare industry, from medical professions to healthcare administration, highlighting opportunities for students.",
+    accordions: [
+      {
+        title: "Exploring Medical Professions",
+        image: "/pictures/pic30.jpg",
+        content: [
+          "Physician and Surgeon Careers: Provides an overview of medical specialties, including primary care, surgery, and specialized fields like cardiology and pediatrics.",
+          "Nursing and Allied Health Professions: Discusses career paths in nursing, physical therapy, occupational therapy, and other allied health professions."
+        ]
+      },
+      {
+        title: "Healthcare Administration and Management",
+        image: "/pictures/pic31.jpg",
+        content: [
+          "Healthcare Leadership Roles: Explores roles in healthcare administration, including hospital administration, healthcare management, and public health.",
+          "Healthcare Policy and Advocacy: Discusses the impact of healthcare policies on patient care and the role of advocacy in improving healthcare delivery."
+        ]
+      },
+      {
+        title: "Emerging Trends in Healthcare",
+        image: "/pictures/pic32.jpg",
+        content: [
+          "Telemedicine and Digital Health: Highlights the growth of telemedicine and digital health technologies, providing new opportunities for healthcare professionals.",
+          "Global Health Initiatives: Examines global health challenges and opportunities, including infectious disease prevention, healthcare access, and humanitarian aid."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Environmental Conservation Careers",
+    image: "/pictures/pic33.jpg",
+    description: "Inspires students to pursue careers in environmental conservation and sustainability, addressing pressing global challenges.",
+    accordions: [
+      {
+        title: "Conservation Science and Research",
+        image: "/pictures/pic34.jpg",
+        content: [
+          "Biodiversity Conservation: Discusses efforts to protect and restore biodiversity through research, conservation initiatives, and habitat restoration projects.",
+          "Climate Change Mitigation: Explores strategies and technologies for mitigating climate change impacts, including renewable energy and sustainable practices."
+        ]
+      },
+      {
+        title: "Environmental Policy and Advocacy",
+        image: "/pictures/pic35.jpg",
+        content: [
+          "Environmental Law and Policy: Examines the role of policy in addressing environmental issues, including regulations, legislation, and international agreements.",
+          "Advocacy and Community Engagement: Discusses the importance of advocacy and grassroots efforts in promoting environmental awareness and sustainability."
+        ]
+      },
+      {
+        title: "Green Careers and Sustainable Development",
+        image: "/pictures/pic36.jpg",
+        content: [
+          "Green Building and Urban Planning: Highlights careers in green building design, sustainable architecture, and urban planning to promote eco-friendly development.",
+          "Corporate Sustainability: Discusses the role of businesses in adopting sustainable practices and corporate social responsibility (CSR) initiatives."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Technology and Innovation Careers",
+    image: "/pictures/pic37.jpg",
+    description: "Explores career opportunities in technology and innovation, from software development and cybersecurity to data science and artificial intelligence.",
+    accordions: [
+      {
+        title: "Software Development and Engineering",
+        image: "/pictures/pic38.jpg",
+        content: [
+          "Programming Languages and Technologies: Discusses popular programming languages and technologies used in software development and engineering.",
+          "Agile Methodology: Introduces agile development practices and methodologies for efficient software development and project management."
+        ]
+      },
+      {
+        title: "Cybersecurity and Information Assurance",
+        image: "/pictures/pic39.jpg",
+        content: [
+          "Cyber Threats and Defense Strategies: Examines cybersecurity threats, including malware, phishing attacks, and data breaches, and strategies to protect information assets.",
+          "Ethical Hacking and Penetration Testing: Discusses ethical hacking techniques and penetration testing to identify and address vulnerabilities in cybersecurity defenses."
+        ]
+      },
+      {
+        title: "Data Science and Artificial Intelligence",
+        image: "/pictures/pic40.jpg",
+        content: [
+          "Big Data and Analytics: Explores the role of big data and analytics in extracting valuable insights and making data-driven decisions in various industries.",
+          "Machine Learning and AI Applications: Discusses applications of machine learning and artificial intelligence in areas like healthcare, finance, and autonomous systems."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Creative Arts and Media Careers",
+    image: "/pictures/pic42.jpg",
+    description: "Encourages exploration of careers in the creative arts and media industries, including visual arts, performing arts, and digital media production.",
+    accordions: [
+      {
+        title: "Visual Arts and Design",
+        image: "/pictures/pic41.jpg",
+        content: [
+          "Graphic Design and Illustration: Discusses careers in graphic design, illustration, and visual communication, exploring creative processes and design principles.",
+          "Digital Media and Animation: Highlights opportunities in digital media production, animation, and multimedia storytelling in film, television, and gaming."
+        ]
+      },
+      {
+        title: "Performing Arts and Entertainment",
+        image: "/pictures/pic43.jpg",
+        content: [
+          "Acting and Theater Arts: Explores careers in acting, theater production, and performing arts management, including audition techniques and stagecraft.",
+          "Music and Audio Production: Discusses roles in music composition, audio engineering, and sound design for film, television, and interactive media."
+        ]
+      },
+      {
+        title: "Media Studies and Journalism",
+        image: "/pictures/pic44.jpg",
+        content: [
+          "Journalism and News Reporting: Examines careers in journalism, investigative reporting, and digital media journalism, emphasizing ethical reporting practices.",
+          "Media Literacy and Communication: Discusses the role of media studies in understanding media influences, communication theories, and audience engagement."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Legal Careers and Justice Studies",
+    image: "/pictures/pic45.jpg",
+    description: "Introduces students to careers in law, criminal justice, and legal studies, emphasizing justice, advocacy, and the rule of law in society.",
+    accordions: [
+      {
+        title: "Law and Legal Practice",
+        image: "/pictures/pic46.jpg",
+        content: [
+          "Legal Specialties: Discusses different areas of legal practice, including corporate law, criminal law, family law, and environmental law.",
+          "Courtroom Procedures: Provides an overview of courtroom procedures, including trial advocacy, legal arguments, and the role of judges and juries."
+        ]
+      },
+      {
+        title: "Criminal Justice and Law Enforcement",
+        image: "/pictures/pic47.jpg",
+        content: [
+          "Law Enforcement Careers: Explores careers in law enforcement, including police officers, detectives, and federal agents, highlighting roles in public safety and crime prevention.",
+          "Criminal Justice Reform: Examines efforts to reform the criminal justice system, including policy changes, community outreach, and advocacy for social justice."
+        ]
+      },
+      {
+        title: "Legal Research and Policy Analysis",
+        image: "/pictures/pic48.jpg",
+        content: [
+          "Legal Research Skills: Introduces legal research methods and resources used in analyzing statutes, case law, and legal precedents to support legal arguments.",
+          "Policy Analysis and Advocacy: Discusses the role of policy analysts and advocates in influencing legislation, promoting public policy initiatives, and advancing social justice."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Education and Teaching Careers",
+    image: "/pictures/pic49.jpg",
+    description: "Inspires students to pursue careers in education and teaching, highlighting the importance of educators in shaping future generations.",
+    accordions: [
+      {
+        title: "Teaching and Classroom Management",
+        image: "/pictures/pic50.jpg",
+        content: [
+          "Effective Teaching Strategies: Discusses instructional methods, classroom management techniques, and student engagement strategies for effective teaching.",
+          "Curriculum Development: Explores curriculum design and lesson planning to meet educational standards and promote student learning and development."
+        ]
+      },
+      {
+        title: "Special Education and Inclusive Practices",
+        image: "/pictures/pic51.jpg",
+        content: [
+          "Special Education Services: Examines roles in special education, including special education teachers, speech-language pathologists, and occupational therapists.",
+          "Inclusive Education Practices: Discusses strategies for creating inclusive classrooms that accommodate diverse learning needs and promote educational equity."
+        ]
+      },
+      {
+        title: "Educational Leadership and Administration",
+        image: "/pictures/pic52.jpg",
+        content: [
+          "School Administration and Leadership: Explores roles in educational leadership, including principals, school administrators, and district superintendents.",
+          "Education Policy and Reform: Examines the impact of education policies on student outcomes and discusses efforts to improve educational quality and equity."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Social Sciences and Human Services Careers",
+    image: "/pictures/pic53.jpg",
+    description: "Explores careers in social sciences and human services, focusing on understanding human behavior, addressing social issues, and promoting well-being.",
+    accordions: [
+      {
+        title: "Psychology and Counseling",
+        image: "/pictures/pic54.jpg",
+        content: [
+          "Clinical Psychology: Discusses careers in clinical psychology, including assessment, diagnosis, and treatment of mental health disorders.",
+          "Counseling and Therapy Services: Explores roles in counseling, therapy, and social work, providing support and intervention to individuals and families."
+        ]
+      },
+      {
+        title: "Social Work and Community Services",
+        image: "/pictures/pic55.jpg",
+        content: [
+          "Community Outreach and Advocacy: Examines roles in community organizing, social advocacy, and nonprofit management to address social issues and promote social justice.",
+          "Social Services and Welfare Programs: Discusses social services programs, including child welfare, elder care, and support services for vulnerable populations."
+        ]
+      },
+      {
+        title: "Human Development and Family Studies",
+        image: "/pictures/pic56.jpg",
+        content: [
+          "Human Development Theories: Introduces theories of human development across the lifespan, emphasizing factors influencing growth, learning, and behavior.",
+          "Family Dynamics and Support Systems: Discusses roles in family support services, parenting education, and advocacy for family well-being and child development."
+        ]
+      }
+    ]
+  },
+  {
+    title: "Business and Management Careers",
+    image: "/pictures/pic57.jpg",
+    description: "Provides insights into careers in business and management, from entrepreneurship and marketing to finance and corporate leadership.",
+    accordions: [
+      {
+        title: "Entrepreneurship and Small Business Management",
+        image: "/pictures/pic58.jpg",
+        content: [
+          "Startup Essentials: Discusses key steps in launching a startup, including business planning, market research, and funding strategies.",
+          "Small Business Management: Explores operational strategies, financial management, and growth opportunities for small businesses and startups."
+        ]
+      },
+      {
+        title: "Marketing and Digital Strategy",
+        image: "/pictures/pic59.jpg",
+        content: [
+          "Marketing Campaigns and Brand Management: Discusses strategies for creating effective marketing campaigns, building brand identity, and engaging target audiences.",
+          "Digital Marketing Trends: Explores the role of digital platforms, social media, and content marketing in reaching consumers and driving business growth."
+        ]
+      },
+      {
+        title: "Finance and Investment Management",
+        image: "/pictures/pic60.jpg",
+        content: [
+          "Financial Analysis and Risk Management: Examines financial analysis techniques, risk assessment, and investment strategies for corporate finance and investment management.",
+          "Wealth Management and Personal Finance: Discusses wealth accumulation strategies, retirement planning, and financial planning services for individuals and families."
+        ]
+      }
+    ]
+  }
+];function generateEducationalContent() {
+    const container = document.getElementById('content-container');
+
+    educationalContent.forEach((content, index) => {
+      const div = document.createElement('div');
+      div.classList.add('sim');
+
+      const html = `
+        <div class="row">
+          <div class="col-lg-5 mr-auto mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+            <img src="${content.image}" alt="image" class="img-fluid">
+          </div>
+          <div class="col-lg-7 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="line-bottom mb-4">${content.title}</h3>
+            <p>${content.description}</p>
+
+            <div class="custom-accordion" id="accordion_${index}">
+              ${content.accordions.map((accordion, idx) => `
+                <div class="accordion-item">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link ${idx === 0 ? '' : 'collapsed'}" type="button" data-toggle="collapse" data-target="#collapse_${index}_${idx}"
+                      aria-expanded="${idx === 0 ? 'true' : 'false'}" aria-controls="collapse_${index}_${idx}">${accordion.title}</button>
+                  </h2>
+                  <div id="collapse_${index}_${idx}" class="collapse ${idx === 0 ? 'show' : ''}" aria-labelledby="heading_${index}_${idx}" data-parent="#accordion_${index}">
+                    <div class="accordion-body">
+                      <div class="d-flex">
+                        <div class="accordion-img mr-4">
+                          <img src="${accordion.image}" alt="Image" class="img-fluid">
+                        </div>
+                        <div>
+                          ${accordion.content.map(para => `<p>${para}</p>`).join('')}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+
+      div.innerHTML = html;
+      container.appendChild(div);
+    });
+  }
+
+  // Call function to generate educational content on page load
+  window.onload = function() {
+    generateEducationalContent();
+  };
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const scrollButton = document.getElementById('scrollButton');
+
+    if (scrollButton) {
+      scrollButton.addEventListener('click', function () {
+        const sectionToScroll = document.querySelector('.speed');
+
+        if (sectionToScroll) {
+          sectionToScroll.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      /* Box Shadow Example */
+      /* Box Shadow Example */
+      .box-shadow {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+
+      .box-shadow:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Container Example */
+      .sim {
+        width: 100%;
+      max-width: 1200px;
+      margin: 20px auto; /* Adjust margin as needed */
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      margin-bottom: 20px
+      }
+
+      .sim:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 mr-auto">
+          <div class="widget">
+            <h3>About Us<span class="text-primary">.</span> </h3>
+            <p>we live in vizag haha</p>
+          </div>
+          <div class="widget">
+            <h3>Connect Us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 ml-auto">
+          <div class="widget">
+            <h3>Project based on</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li><a href="#">Bootstrap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>Do.No 1-56/02 Silknagar third-line</address>
+            <ul class="list-unstyled links mb-4">
+              <li><a href="tel://11234567890">123456789</a></li>
+              <li><a href="tel://11234567890">123456789</a></li>
+              <li><a href="mailto:gjvardhan992003@gmail.com">whatsnext@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
+    import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAWmhV4EAuU2cUWIKyFeVQrJMk8PiqCSpA",
+      authDomain: "what-s-next-login.firebaseapp.com",
+      projectId: "what-s-next-login",
+      storageBucket: "what-s-next-login.appspot.com",
+      messagingSenderId: "552560378402",
+      appId: "1:552560378402:web:d96ced8dec89e9bf74807b",
+      measurementId: "G-L8LKG8HNN1"
+    };
+
+    function redirectToNewPage() {
+      setTimeout(() => {
+        console.log("User logged out successfully!");
+        window.location.href = newPageUrl;
+      }, 1000);
+    }
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    const newPageUrl = "index.html";
+    let username = "john";
+
+    function displayUsername(username) {
+      const usernamePlaceholder = document.getElementById('usernamePlaceholder');
+      if (usernamePlaceholder) {
+        usernamePlaceholder.innerText = username;
+      }
+    }
+
+    document.getElementById('logout').addEventListener('click', (e) => {
+      signOut(auth).then(() => {
+        alert("User " + username + " logged out successfully!");
+        redirectToNewPage();
+      }).catch((error) => {
+        alert(error.message);
+      });
+    });
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        username = user.displayName || user.email;
+        displayUsername(username);
+      } else {
+        displayUsername("Guest");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+      document.getElementById('userName').textContent = name;
+    });
+  </script>
+  <script>
+    // Function to get URL parameters
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Get username from URL query parameter
+    var usernam = getParameterByName('username');
+    if (usernam) {
+      document.getElementById('usernameDisplay').textContent = usernam;
+    }
+  </script>
+  <script>
+    // JavaScript to highlight current page in navigation
+    document.addEventListener("DOMContentLoaded", function () {
+      var currentUrl = window.location.href;
+      var menuLinks = document.querySelectorAll(".js-clone-nav li a");
+
+      menuLinks.forEach(function (link) {
+        if (link.href === currentUrl) {
+          link.parentNode.classList.add("current");
+        }
+      });
+    });
+  </script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

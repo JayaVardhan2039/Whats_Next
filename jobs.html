@@ -1,0 +1,1463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="">
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>What's next by Jaya Vardhan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: .2s linear;
+      font-family: "poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f2f2;
+    }
+
+    .wrapper {
+      margin: 10px auto;
+      padding: 0 10%;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+    }
+
+    h1 {
+      color: #4e4949;
+      font-size: 40px;
+      text-align: center;
+      padding-bottom: 15px;
+      text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .box {
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img {
+      height: 50px;
+    }
+
+    .box h3 {
+      color: #444;
+      padding: 10px 0;
+      font-size: 20px;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 100%;
+      overflow: scroll;
+    }
+
+    .ij {
+      font-size: 20px;
+    }
+
+    .searchbar .search {
+      display: inline-block;
+      margin-left: 250px;
+      border: 0px solid grey;
+      padding: 0px;
+      transition: all 0.15s ease;
+    }
+
+    .searchbar input[type=text] {
+      font-size: 14px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      padding: 10px;
+      width: 15em;
+      margin: 10px 2px 0 0;
+    }
+
+    /* ##### Buttons ##### */
+    .btn-group .button {
+      background-color: #FFF;
+      color: #888;
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border: 1px solid #888;
+      border-radius: 5px;
+      margin: 10px 2px;
+    }
+
+    .btn-group {
+      display: inline-block;
+    }
+
+    .btn-group .button:hover {
+      background-color: #888;
+      color: white;
+    }
+
+    .btn-group .button:active,
+    .btn-group .button:focus {
+      background-color: #888;
+      color: white;
+    }
+
+    /* ##### Boxen ##### */
+    .hi {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+    .item {
+      background-color: #FFF;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .imgframe {
+      display: inline-block;
+      position: relative;
+
+      width: 335px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 50px;
+      background: #FFF;
+
+      -webkit-box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.40);
+      -moz-box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.40);
+      box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.40);
+    }
+
+    .imgframe img {
+      width: 75%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .item:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .titlediv {
+      min-height: 18px;
+      display: block;
+      line-height: 1em;
+      margin: 1em;
+    }
+
+    .title {
+      font-size: 1em;
+      font-weight: 900;
+      color: #888;
+    }
+
+    .type {
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      position: flex;
+      color: #FFF;
+      border: 0px solid #fff;
+      background-color: #888;
+    }
+
+    .tag {
+      bottom: 7px;
+      position: absolute;
+    }
+
+    /* ##### Typografie ##### */
+
+    p {
+      margin: 13px 3px 3px 13px;
+      font-size: 13px;
+      color: #515A5A;
+      line-height: 18px;
+    }
+
+    /* ##### Filter ##### */
+    .filterDiv {
+      display: none;
+    }
+
+    .show {
+      display: flex;
+    }
+
+    .container-btn {
+      margin: 0 30px 20px 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .vl {
+      border-left: 1px solid lightgrey;
+      height: 30px;
+      margin: auto 20px;
+    }
+
+    /*top alert*/
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+      opacity: 1;
+      transition: opacity 0.6s;
+      margin-bottom: 15px;
+    }
+
+    .alert.info {
+      background-color: orange;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+  <style>
+    .typewriter {
+      overflow: hidden;
+      /* Ensures the text is not revealed until the animation */
+      border-right: .15em solid orange;
+      /* The typewriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      margin: 0 auto;
+      /* Gives that typewriter effect */
+      /* Adjust as needed */
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* Basic styling */
+    .js-clone-nav {
+      list-style: none;
+      padding: 0;
+    }
+
+    .js-clone-nav li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .js-clone-nav li a {
+      position: relative;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .js-clone-nav li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      border-bottom: 1px dotted #7289DA;
+      /* Dotted underline color */
+      transition: background-color 0.3s, width 0.3s;
+      /* Smooth transition */
+    }
+
+    .js-clone-nav li.current a {
+      color: #eff1f7;
+      /* Discord's primary color */
+    }
+
+    .js-clone-nav li.current a::after {
+      background-color: #f2f3f8;
+      /* Dotted underline color */
+      width: 100%;
+      /* Expand underline to match text length */
+    }
+
+    .js-clone-nav li.current a:hover {
+      color: #010514;
+      /* Highlighted text color */
+    }
+
+    /* Additional styling for text color */
+    .js-clone-nav li.current a {
+      color: #fff;
+      /* White text color */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+    const name = localStorage.getItem('username'); // Retrieve the name from local storage
+    if (name) {
+      console.log(`Welcome, ${name}!`); // Use the name as needed
+      // You can also update the DOM or perform other actions with the name
+      document.getElementById('welcomeMessage').textContent = `Welcome, ${name}!`;
+    } else {
+      console.log('No user logged in.');
+    }
+  });
+  </script>
+    <style>
+      h1.mb-4.heading.text-white.typewriter {
+        font-family: 'Roboto', sans-serif; /* Use the font you imported */
+        font-size: 2.5em; /* Adjust the font size as needed */
+        color: aqua; /* Change the color if needed */
+         /* Ensure text is uppercase */
+        text-align: center; /* Center align text if needed */
+      }
+    </style>
+  <nav class="site-nav mb-5">
+    <div class="pb-2 top-bar mb-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-9">
+            <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> <span
+                class="d-none d-lg-inline-block">Have a question?</span></a>
+            <a href="#" class="small mr-3"><span class="icon-phone mr-2"></span> <span
+                class="d-none d-lg-inline-block">0123456789</span></a>
+            <a href="#" class="small mr-3"><span class="icon-envelope mr-2"></span> <span
+                class="d-none d-lg-inline-block">whatsnext@gmail.com</span></a>
+          </div>
+          <div id="welcomeMessage" style="color:aqua; text-transform: uppercase;">!</div>
+        </div>
+      </div>
+    </div>
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-right">
+          <a href="index2.html" class="logo menu-absolute m-0">What's NEXT<span class="text-primary">?</span></a>
+          
+          
+
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu text-primary">
+            <li><a href="index2.html">Career Advice</a></li>
+            <li><a href="jobs.html">Jobs or Internships</a></li>
+            <li><a href="education.html">Education</a></li>
+          </ul>
+          <button type="submit" id="logout" class="btn btn-sm btn-secondary">SignOut</button>
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jaya_co-hero overlay" style="background-image: url('images/yy.jpg');">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center container">
+              <h1 class="mb-4 heading text-white typewriter" data-aos="fade-up" class="item filterDiv Google">Explore
+                Our Blog on Jobs </br>and Intenships</h1>
+              <p id="scrollButton" class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#"
+                  class="btn btn-secondary">Explore this page</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jaya_co-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="wrapper">
+          <h1><b>TOP COMPANIES FOR JOBS</b></h1>
+          <div class="container">
+            <div class="box">
+              <img
+                src="data:image/png;base64,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">
+              <h3>Google</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAh1BMVEWBvAYFpvD/ugjz8/PzUyX39fPz9fjz9/j39fjz/f/69//y9///+PMAoPD/tgDzwrrP4LrzQgDzTBejzGhnu/H8yGgAo/C62fL34Lp3uADzhW7z0MrZ5cjzOgDzfWSdyV3I4PL9xl325cjz5ePo7uPzLgDzppi61pOPyvH61I8AmvDi7PT07uMZY3oIAAABC0lEQVR4nO3Zx67CMABE0YCJY0qA0DuEVyn//30Qg+SwnSCFxb37kc5+IlN3Ud0ABEGQiPmxEysLvgZa64LgNkOt7yBIBj+Z0nbXvq87+6XW0JUEWUtptPKCcSSFAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAEF1wXaklD0Fy+qC9W4l9VsI3N9Yar8JApO0xfzadbQep+vH/M4ITNwT82vb1bJBEB8mWv8FwZ7yqVJ+tEEwT2dK6aQQdPO+1uJF0FCaPQTTflMJAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAYLqgnMq9bavzVzmWof4PrbHhdbVBIGJxfzYipmyoMYQfILgBgGACCUUVUmkAAAAAElFTkSuQmCC">
+              <h3>Microsoft</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAOVBMVEX///+qqqqmpqb8/Pyjo6PW1ta9vb2urq7Pz8/g4OD19fXm5ubMzMzy8vLr6+vv7+/Dw8O3t7ecnJy0wCHVAAABkklEQVRoge2XyY7EIAxEwZgtW4f+/4+dLEqrcxmsItZoJOqYw5NTgMs2pqurq6urq+uucZqVyC4R86LDHi1Zyy8Vtme7iVXY+WDbosEe6GCz14AHe8opsOfTFM4KbDMdrlDQYJt4sIuGKca8d09WHbZ7ExcVv3dN/uGXOWQ/pfzVqNyYQglTHprRS6BT0Z9WL6ul/c5sn8rYhHaB7SWiNS8+Mn2+bGfbwJ7tF+ms1t4/RPjmzLauCLJdFMDfYAubqM4m8ExfrMc2a71wQtu6E5gCd8dcd4XgEWCtF44HadFz3Jh64bgrTnAR4bYogcN95a8rJzyVBO8TT1NBS8SjItThuOmCF0oJhXtJN0ePdBDcRYtGqCjkYLogLHZhWTRKfNlmFygxZL6gcZREvjDmyyCCo1OR5EjhOJoFcHxYrLvesNfVL0zLJj1WSm/IC1MbRlu39N/Gl+Zld7jR7qsFflM+9AtHHJL3KVxLEcX2dc64suGIr23OuGR5+4OnFuklrf42uo0++QfK7urq6urq+sf6AYNtDAE6aJ1FAAAAAElFTkSuQmCC">
+              <h3>Apple</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,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">
+              <h3>Amazon</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEU8Wpn///8uUpYyVJcmS5IxUpWnsczd4eueqsfh5e36+/ybp8Y5WJg2VpceR5ApTZNqfq3X3Oe0vdOLmb3v8fZlequVosPJz9+FlLry8/dNZ6BZcKV3ibOqtc5wg7BEYZ66wtfQ1uRdc6fAyNoVQ44AOoovu9IUAAAER0lEQVR4nO3d63aiMBSGYQgBPCTB86Fq1bZz/7c4+qMdtOCOwBY2871/u6R5FnhMjEHY94K2B8AehPKDUH4Qyu8/FKbjZaCkFkwGQ0I43bnYBkZqgY3dcvhIuHImkJ51Sblwn7U9vEbS8zLhqh/AC/FQLJy6tkfWWG5YKNzJvw9+Z9+LhGl/TuHlJC4KhOO47WE1mDoUCJe27WE1mN0XCNseVKOZY4FQ9eeB5iKMIJQehPKDUH4Qyg9C+UEoPwjlB6H8IJSfAKGxsVLZTypTsYrjyBob+Iyz20JjldZv76vktD5Pr53P68/TaZaMV5v9cne8/DXLIuIY3RWaWMebWToKHzRapOvBY2JnhVYfB+kj3E9D/fBAHRVGbjP14l1KBQojt9r6+iQKjds/4RMoVEfv61Ok0Lh5kaI/QqM/nwXKEpr41xqYfglNsCgi9EdozVOPoQKFWZUzKEnonnyWECfMDkXD75HQTioCpQiNrvQoI0iYzaoChQjNW2WgEKFe91xod9WBMoTZ86+3hQltDaAIYTzou9BVeM8kSmhrPFXIENa7SCUItd8nv3KFRtUCCvjM+4l3FcP1LBmMbxvMOz9v4Xk33CYfWmdKxfd1f+5J+bwmHW1cxVF1QKg9ng1TRZyp8jogdB7AGl+k64DQ0EJbY0DtC80HCVypOsdvXZj7TktZj5/wiNoXRuRk02etL0N2QDimhJvKj6PX2hfST/hvtYbTAWFSpMqXCRcqSrit9UAjQUi8d6CCkD9SSLzDpYKQPwghpIKQPwghpIKQPwghpIKQPwghpIKQv74Iza+Jze80Kfwqve01ateuFwnNZFDW+EwIF6vS217bEMQXCWsuKHnUiZiYki8cd2Men1G47/1VSu1iKV9IzYCLF5LzNuKF5OsB8cI1NQUuXnig9loVL1z1XvjekdelfEJyGYN4IbmMQbpwS25bLV2YkuulpAvpFWHShQm5bFG6kFjG3gPhhNxcXbqQ/tfShfRvHAgXLujPUoULz/TyYeHCU++FA/qXOIQLPZaACxd+0CMVLvQYqGzhyGPiTbbQZ4H0i4TRfFgatXfSqPym1LzTC4VBpMv6ok5v+qf0tj7f+MIsN38QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkgFIX8QQkhVKGxo7H6xC48FQnprogbjFuZ+I/Of0GPHkObiFqpZgXBI703UXNxCty0QhssXXqbMwij3Q6454StPIq/Q6NymFDlhmNS7Mp6JV+hOuSPlheH8ZUROoXE3m27cCMODe9F9kVEY6dPNkW6F4fDdKWsCw52HsMJRA2OV299tDBPcH3px2B8j9rIkHD0qnLoqhz1uZtt70C9h74JQfhDKD0L5QSi/v0LujVjzxgQBAAAAAElFTkSuQmCC">
+              <h3>Facebook</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAAAD///+8vLx2dnbNzc319fWLi4tdXV3y8vJUVFTo6OgUFBQkJCSpqam4uLiZmZlOTk4zMzMMDAw4ODjU1NRycnJpaWnb29suLi6zs7NjY2NtbW2enp4oKCgYGBgeHh5AQEDj4+PFxcWGhoZISEiTk5N+fn6kpKSJiYmNXRjhAAADaklEQVR4nO3afVuyMBSA8eFLiG9oGoipmSX2/T/hA+k22IbRU4F13b+/YDtsnYoDDIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIYEM6fgSYintV8h2G9Lg+ztyLU50d4exor5EV6FSAi/qi837AR6kMQREBgTDR0xrWaY/X6Daxlm4r0cZOLonZbnmblGaCTDwdCp72cZ9gdX9QePl0E2jsjn8jyhI6TfSIbA7etME5fOa1bfOzUk+SCpq+dQvBhMnQc3kmFVoYw+rqVnqXDXUs/r6VnW7mPbzvDq9VCJKzP0VmqWQ4sZnjZOp70Qi0kd+b+pf+dyXKhZUmfAXSMZ4s+4V+r1jTTdej8yyI6d0b770Vzc+pL3aHb5nupUpWPb1wdsVGSiI88u1fTBbG+mxJTp+vZgdhUqvc6wUBBDFTm1iuX8vb3XThEt+0KG+o9uP0SFxuAtZrhQrHNkpPt043YsFZ6Fd2PL+wBbs3VrzgHU0JXSudm1SrtX+IXIQLU+qI3s6d5q7HYbzEzSRcCaveKu+aK4HKNradyXW3vxLDc7v6CW2kq3ljrD5UluJWPVGLWaYby8iH2za7bsVTqWIo8qcrKQm9NIboWB6l42lhfwm+hT5DPn4bJceI/yZF5mj8WJEToXvjrZ2zgP/7eWRsVIfV8aCxGWAwfZNfdGrhafvB4WbxD01eI5u1Eox53azjBVFmbX1XuadFaIDGRkmv9po1Jg9liyUAOlzSWGP2SujMyue92nG53PemMVuCrHnINGroEaU6+W1n7Gz5eJi5Vlaew3kJHpCxnqdRojw5F6wPBe8v2WM/yOtbaJsciWqP333Uc9yY/nY1Mrmjt7wXTnWOYsrIA610vPDVW71rkOXLMJnTbZrc3K/cLIfMOUDbI2R3k5Dz4+h1xu5l/NqE3lT/WdvAq13x/m31xY7w/lhxgDOVauax3baoY1vqc5e3FlGF9GPxUTaSnDztTps+/xjaPl/9/qkIW8XXYCc65m3uMDt6/iu7ZBre/a5BpGaI5yUOP39M1sZEYNGsnwC7W0p5YDKmupEHdDtXljV4uProdxuNeDWK9G9YeJc70s3lKGQYXr3wgbz8kL8+hX11Rja5JGMgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAzD+9CU7/BWP7oAAAAABJRU5ErkJggg==">
+              <h3>IBM</h3>
+            </div>
+            <div class="box">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGWla-aA_EWs2Qg6vpmO34Diz5MHPTM5RI4g&usqp=CAU">
+              <h3>oracle</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/png;base64,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">
+              <h3>Infosys</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/jpeg;base64,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">
+              <h3>Linkedin</h3>
+            </div>
+            <div class="box">
+              <img
+                src="data:image/jpeg;base64,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">
+              <h3>TCS</h3>
+            </div>
+            <div class="box">
+              <img src="https://1000logos.net/wp-content/uploads/2021/09/Cognizant-Logo.png">
+              <h3>Cognizant</h3>
+            </div>
+            <div class="box">
+              <img src="https://ptcsys.com/wp-content/uploads/2018/11/cisco-logo-1.png">
+              <h3>cisco</h3>
+            </div>
+          </div>
+        </div>
+        <div class="container-btn">
+          <div class="searchbar">
+            <div class="search">
+              <input type="text" id="searchinput" onkeyup="searchFunction()" placeholder="Search">
+            </div>
+          </div>
+          <div class="vl"></div>
+          <div class="buttons">
+            <div class="btn-group">
+              <button class="button active" onclick="filterSelection('all')"> Show all</button>
+              <button class="button" onclick="filterSelection('Amazon')"> Amazon</button>
+              <button class="button" onclick="filterSelection('Google')"> Google</button>
+              <button class="button" onclick="filterSelection('Microsoft')">Microsoft</button>
+              <button class="button" onclick="filterSelection('Swiggy')">Swiggy</button>
+              <button class="button" onclick="filterSelection('Flipkart')">Flipkart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="">
+          <!--<a href="https://jobs.careers.microsoft.com/global/en/job/1577327/Data-Scientist---Internship-Opportunities"
+            target="_blank">
+            <div class="item filterDiv Microsoft">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180"
+                    alt="GraphicBurger">
+                </div>
+                <div class="titlediv"><span class="title">Data Scientist</span></div>
+                <p><b>Description:</b>At Microsoft, Interns work on real-world projects in collaboration with teams
+                  across the
+                  world, while having fun along the way. You’ll be empowered to build community, explore your passions
+                  and
+                  achieve your goals.</p>
+
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.google.com/about/careers/applications/jobs/results/112527832824849094-student-researcher-phd-2023?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India"
+            target="_blank">
+            <div class="item filterDiv Google">
+              <div class="content flex-wrap">
+                <div class="imgframe"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180"
+                    alt="Flickr Creative Commons"></div>
+                <div class="titlediv"><span class="title">Student Researcher, PhD, 2023</span></div>
+                <p><b>Responsibilities:</b>Participate in research to develop solutions for real-world, large-scale
+                  problems.
+
+                </p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+
+
+          <a href="https://www.amazon.jobs/en-gb/jobs/2415130/product-management-intern" target="_blank">
+            <div class="item filterDiv Amazon">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180"
+                    alt="GraphicBurger">
+                </div>
+                <div class="titlediv"><span class="title"><b>Product Management Intern</b></span></div>
+                <p><b>Description:</b>Product Managers (PM) interns at Amazon partner with cross-functional teams to
+                  develop
+                  ideas from conception to execution, contribute to business models and marketing plans, analyze success
+                  metrics, and make recommendations for growth.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://careers.cognizant.com/studentandinterns/global/en/job/00039714235/Programmer-Analyst-Trainee"
+            target="_blank">
+            <div class="item filterDiv Cognizant">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180"
+                    alt="Life of Vids">
+                </div>
+                <div class="titlediv"><span class="title">PROGRAMMER ANALYST TRAINEE</span></div>
+                <p><b>Description:</b>Understanding details of the quality processes and practices followed in the
+                  project
+                  from different sources.Attend any Knowledge Transition sessions conducted within the project to gain
+                  proficiency in project level knowledge.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://careers.cognizant.com/studentandinterns/global/en/job/00043576146/Trainee-Junior-Data-Analyst"
+            target="_blank">
+            <div class="item filterDiv Cognizant">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180"
+                    alt="Life of Vids">
+                </div>
+                <div class="titlediv"><span class="title">TRAINEE - JUNIOR DATA ANALYST</span></div>
+                <p><b>Description:</b>Perform coding activities on the assigned project with timelines and
+                  efficiency.Import
+                  uncoded terms in database and export coded medical terms from coding platform.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.amazon.jobs/en-gb/jobs/2407881/c-software-engineer-amazon-devices-and-services"
+            target="_blank">
+            <div class="item filterDiv Amazon">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180"
+                    alt="GraphicBurger">
+                </div>
+                <div class="titlediv"><span class="title"><b>C++ Software Engineer, Amazon Devices and
+                      Services</b></span>
+                </div>
+                <p><b>Description:</b>As a Software Engineer on this team, you will define and build innovative consumer
+                  product experiences with a direct impact on the design, architecture, and implementation of flagship
+                  products that customers love and use every day.
+                </p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.google.com/about/careers/applications/jobs/results?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India"
+            target="_blank">
+            <div class="item filterDiv Google">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180"
+                    alt="Flickr Creative Commons"></div>
+                <div class="titlediv"><span class="title">Software Engineering Intern, Summer 2024</span></div>
+                <p><b>Description:</b>The Software Engineering Internship program will give you an opportunity to work
+                  on
+                  computer science solutions, develop scalable, distributed software systems, and also collaborate on
+                  multitudes of smaller projects that have universal appeal.
+
+                </p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jobs.careers.microsoft.com/global/en/job/1577325/Software-Engineering---Internship-Opportunities"
+            target="_blank">
+            <div class="item filterDiv Microsoft">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180"
+                    alt="GraphicBurger">
+                </div>
+                <div class="titlediv"><span class="title">Software Engineering</span></div>
+                <p><b>Description:</b>Software engineers (SWEs) work with teammates to solve problems and build
+                  innovative
+                  software solutions. You are passionate about customers and product quality, and you provide technical
+                  guidance to Program Managers as they consider user needs and product requirements.</p>
+
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://jobs.careers.microsoft.com/global/en/job/1594665/Software-Engineer-II" target="_blank">
+            <div class="item filterDiv Microsoft">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180"
+                    alt="GraphicBurger"></div>
+                <div class="titlediv"><span class="title">Software Engineer II</span></div>
+                <p><b>Job Description:</b>Working with big data by training, extending, and shipping the capability of
+                  deep learning models to provide compelling experiences across our products.</p>
+
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.amazon.jobs/en-gb/jobs/2393244/l3-channel-team-lead" target="_blank">
+            <div class="item filterDiv Amazon">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180"
+                    alt="GraphicBurger"></div>
+                <div class="titlediv"><span class="title"><b>L3-Channel Team Lead</b></span></div>
+                <p><b>Job Description:</b> Account Identification & Acquisition: Market mapping and Identification of
+                  potential retail stores for time bound Acquisition, induction and onboarding of new accounts (I.H.S
+                  stores) in the assigned territory.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://careers.swiggy.com/#/careers?src%3Dcareers=&location%3DHyderabad%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiSHlkZXJhYmFkIn19="
+            target="_blank">
+            <div class="item filterDiv Swiggy">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180"
+                    alt="iconmonstr"></div>
+                <div class="titlediv"><span class="title">Cluster Manager </span></div>
+                <p><b>Job Description:</b> To ensure great customer experience through best-in-class food & delivery
+                  experience. Ensure maximum reach to consumers within specified clusters and given timeline.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.flipkartcareers.com/#!/job-view/senior-technical-program-manager-bangalore-karnataka-product-tech-thinking-technology-acumen-stakeholder-management-technical-program-management-agile-methodology-planning-execution-problem-solving-decision-making-2023080411091432"
+            target="_blank">
+            <div class="item filterDiv Flipkart">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse3.mm.bing.net/th?id=OIP.1iVnmZ605_lBfAMLYTGoRAHaB8&pid=Api&P=0&h=180"></div>
+                <div class="titlediv"><span class="title">Senior Technical Program Manager</span></div>
+                <p>Technical Program Manager acts as an enabler by playing a critical role in initiation of programs
+                  defining, structuring and building a deliverable based plan in leading cross-functional Product/Tech
+                  teams to focus on outcomes that has business value meeting strategic objectives.
+
+                </p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://careers.cognizant.com/in/en/job/00054891131/Sr-Associate-Projects" target="_blank">
+            <div class="item filterDiv Cognizant">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180"
+                    alt="Life of Vids"></div>
+                <div class="titlediv"><span class="title">SR. ASSOCIATE - PROJECTS</span></div>
+                <p><b>Job description:</b>Contribute to Account Mining & Penetration efforts with active participation
+                  in customer planning process, including strategic planning phase vs execution phase.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.google.com/about/careers/applications/jobs/results/75276783810683590-engineering-manager-google-pixel"
+            target="_blank">
+            <div class="item filterDiv Google">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180"
+                    alt="Flickr Creative Commons"></div>
+                <div class="titlediv"><span class="title">Engineering Manager, Google Pixel</span></div>
+                <p><b>Job Description:</b>As an Engineering Manager, you will own the strategy, scoping, navigation, and
+                  outcome for very difficult and complex technical problems.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://jobs.careers.microsoft.com/global/en/job/1598080/Principal-Software-Engineer"
+            target="_blank">
+            <div class="item filterDiv Microsoft">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180"
+                    alt="GraphicBurger"></div>
+                <div class="titlediv"><span class="title">Principal Software Engineer</span></div>
+                <p><b>Job Description:</b>The ideal candidate for this position will have excellent development skills,
+                  collaboration and experience with larger, team driven software development projects as well as ADO
+                  (Azure Dev Ops) management experience. </p>
+
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.google.com/about/careers/applications/jobs/results/115007515868963526-cloud-technical-solutions-engineer-devices-google-workspace?location=Bangalore%2C%20India"
+            target="_blank">
+            <div class="item filterDiv Google">
+              <div class="content">
+                <div class="imgframe"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180"
+                    alt="Flickr Creative Commons"></div>
+                <div class="titlediv"><span class="title">Cloud Technical Solutions Engineer</span></div>
+                <p><b>Job Description:</b>Listening to the customer and swiftly problem-solve technical issues to show
+                  how our products can make businesses more productive, collaborative, and innovative.</p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.google.com/about/careers/applications/jobs/results/112527832824849094-student-researcher-phd-2023?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India"
+            target="_blank">
+            <div class="item filterDiv Google">
+              <div class="content flex-wrap">
+                <div class="imgframe"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180"
+                    alt="Flickr Creative Commons"></div>
+                <div class="titlediv"><span class="title">Student Researcher, PhD, 2023</span></div>
+                <p><b>Responsibilities:</b>Participate in research to develop solutions for real-world, large-scale
+                  problems.
+
+                </p>
+                </br>
+                <div class="tag"><span class="type">Apply now</span></div>
+              </div>
+            </div>
+          </a>-->
+          <div id="jobContainer"></div>
+  <script>
+    // jobListings.js
+
+    // Sample data for job listings
+    const jobList = [
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1577327/Data-Scientist---Internship-Opportunities",
+    target: "_blank",
+    className: "Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Data Scientist",
+    description: "At Microsoft, Interns work on real-world projects in collaboration with teams across the world, while having fun along the way. You’ll be empowered to build community, explore your passions and achieve your goals.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.google.com/about/careers/applications/jobs/results/112527832824849094-student-researcher-phd-2023?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India",
+    target: "_blank",
+    className: "Google",
+    imgSrc: "https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180",
+    imgAlt: "Flickr Creative Commons",
+    title: "Student Researcher, PhD, 2023",
+    description: "Participate in research to develop solutions for real-world, large-scale problems.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2415130/product-management-intern",
+    target: "_blank",
+    className: "Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Product Management Intern",
+    description: "Product Managers (PM) interns at Amazon partner with cross-functional teams to develop ideas from conception to execution, contribute to business models and marketing plans, analyze success metrics, and make recommendations for growth.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.cognizant.com/studentandinterns/global/en/job/00039714235/Programmer-Analyst-Trainee",
+    target: "_blank",
+    className: "Cognizant",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "PROGRAMMER ANALYST TRAINEE",
+    description: "Understanding details of the quality processes and practices followed in the project from different sources. Attend any Knowledge Transition sessions conducted within the project to gain proficiency in project level knowledge.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.cognizant.com/studentandinterns/global/en/job/00043576146/Trainee-Junior-Data-Analyst",
+    target: "_blank",
+    className: "Cognizant",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "TRAINEE - JUNIOR DATA ANALYST",
+    description: "Perform coding activities on the assigned project with timelines and efficiency. Import uncoded terms in database and export coded medical terms from coding platform.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2407881/c-software-engineer-amazon-devices-and-services",
+    target: "_blank",
+    className: "Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "C++ Software Engineer, Amazon Devices and Services",
+    description: "As a Software Engineer on this team, you will define and build innovative consumer product experiences with a direct impact on the design, architecture, and implementation of flagship products that customers love and use every day.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.google.com/about/careers/applications/jobs/results?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India",
+    target: "_blank",
+    className: "Google",
+    imgSrc: "https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180",
+    imgAlt: "Flickr Creative Commons",
+    title: "Software Engineering Intern, Summer 2024",
+    description: "The Software Engineering Internship program will give you an opportunity to work on computer science solutions, develop scalable, distributed software systems, and also collaborate on multitudes of smaller projects that have universal appeal.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1577325/Software-Engineering---Internship-Opportunities",
+    target: "_blank",
+    className: "Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Software Engineering",
+    description: "Software engineers (SWEs) work with teammates to solve problems and build innovative software solutions. You are passionate about customers and product quality, and you provide technical guidance to Program Managers as they consider user needs and product requirements.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1594665/Software-Engineer-II",
+    target: "_blank",
+    className: "Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Software Engineer II",
+    description: "Working with big data by training, extending, and shipping the capability of deep learning models to provide compelling experiences across our products.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2393244/l3-channel-team-lead",
+    target: "_blank",
+    className: "Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "L3-Channel Team Lead",
+    description: "Account Identification & Acquisition: Market mapping and Identification of potential retail stores for time bound Acquisition, induction and onboarding of new accounts (I.H.S stores) in the assigned territory.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.swiggy.com/#/careers?src%3Dcareers=&location%3DHyderabad%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiSHlkZXJhYmFkIn19=",
+    target: "_blank",
+    className: "Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "iconmonstr",
+    title: "Cluster Manager",
+    description: "To ensure great customer experience through best-in-class food & delivery experience. Ensure maximum reach to consumers within specified clusters and given timeline.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.flipkartcareers.com/#!/jobview/consultant",
+    target: "_blank",
+    className: "Flipkart",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.1iVnmZ605_lBfAMLYTGoRAHaB8&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Consultant",
+    description: "Understand the data requirements, data collection & processing methodologies, and techniques needed to solve complex problems. Partner with engineering teams to build tools and automation capabilities.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.flipkartcareers.com/#!/jobview/data-analyst",
+    target: "_blank",
+    className: "Flipkart",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.1iVnmZ605_lBfAMLYTGoRAHaB8&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Data Analyst",
+    description: "Data Analysts at Flipkart partner with Business, Product, and Engineering stakeholders to solve problems through effective data analysis. Work on large-scale data sets and derive actionable insights.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.flipkartcareers.com/#!/jobview/business-analyst",
+    target: "_blank",
+    className: "Flipkart",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.1iVnmZ605_lBfAMLYTGoRAHaB8&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Business Analyst",
+    description: "Business Analysts at Flipkart leverage data to provide actionable insights and support decision-making. Collaborate with cross-functional teams to deliver impactful analyses and recommendations.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.swiggy.com/#/careers?src%3Dcareers=&location%3DBangalore%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiQmFuZ2Fsb3JlIn19=",
+    target: "_blank",
+    className: "Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "iconmonstr",
+    title: "Delivery Partner",
+    description: "As a Delivery Partner at Swiggy, you will be the face of our brand. You will ensure the timely and safe delivery of orders to our customers. Flexible working hours and attractive earnings.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.cognizant.com/studentandinterns/global/en/job/00045892714/Salesforce-Developer",
+    target: "_blank",
+    className: "Cognizant",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "Salesforce Developer",
+    description: "Develop and customize Salesforce applications based on customer requirements. Work with business analysts to translate business requirements into technical specifications. Ensure the quality and performance of the application.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.swiggy.com/#/careers?src%3Dcareers=&location%3DMumbai%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiTXVtYmFpIn19=",
+    target: "_blank",
+    className: "Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "iconmonstr",
+    title: "Operations Manager",
+    description: "Operations Managers at Swiggy oversee the efficient running of operations, manage teams, ensure customer satisfaction, and drive business growth within their assigned region.",
+    tag: "Apply now"
+  }
+];
+
+
+    // Function to create job listing elements
+    function createJobElements(job) {
+      return `
+        <a href="${job.href}" target="${job.target}">
+          <div class="item filterDiv ${job.className}">
+            <div class="content">
+              <div class="imgframe">
+                <img src="${job.imgSrc}" alt="${job.imgAlt}">
+              </div>
+              <div class="titlediv">
+                <span class="title">${job.title}</span>
+              </div>
+              <p><b>Description:</b> ${job.description}</p>
+              <br>
+              <div class="tag">
+                <span class="type">${job.tag}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+
+    // Function to display job listings
+    function displayJobListings() {
+      const jobContainer = document.getElementById('jobContainer');
+      if (!jobContainer) return; // Check if jobContainer element exists
+
+      // Clear previous content
+      jobContainer.innerHTML = '';
+
+      // Iterate through jobList and create job elements
+      jobList.forEach(job => {
+        const jobElement = createJobElements(job);
+        jobContainer.innerHTML += jobElement;
+      });
+    }
+
+    // Call the displayJobListings function to render job listings
+    displayJobListings();
+  </script>
+
+          <script>
+            filterSelection("all")
+
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                  element.className += " " + arr2[i];
+                }
+              }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+
+
+            /*####################### Filter Suche ####################################### */
+
+            function searchFunction() {
+              // Declare variables
+              var input, filter, list, i;
+              input = document.getElementById('searchinput');
+              filter = input.value.toUpperCase();
+              list = document.getElementsByClassName('content');
+
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < list.length; i++) {
+                if (list[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  list[i].parentElement.parentElement.style.display = "";
+                } else {
+                  list[i].parentElement.parentElement.style.display = "none";
+                }
+              }
+            }
+
+
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+
+            for (i = 0; i < close.length; i++) {
+              close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function () { div.style.display = "none"; }, 600);
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 mr-auto">
+          <div class="widget">
+            <h3>About Us<span class="text-primary">.</span> </h3>
+            <p>we live in vizag haha</p>
+          </div>
+          <div class="widget">
+            <h3>Connect Us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 ml-auto">
+          <div class="widget">
+            <h3>Project based on</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li><a href="#">Bootstrap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>Do.No 1-56/02 Silknagar third-line</address>
+            <ul class="list-unstyled links mb-4">
+              <li><a href="tel://11234567890">123456789</a></li>
+              <li><a href="tel://11234567890">123456789</a></li>
+              <li><a href="mailto:gjvardhan992003@gmail.com">whatsnext@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
+    import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAWmhV4EAuU2cUWIKyFeVQrJMk8PiqCSpA",
+      authDomain: "what-s-next-login.firebaseapp.com",
+      projectId: "what-s-next-login",
+      storageBucket: "what-s-next-login.appspot.com",
+      messagingSenderId: "552560378402",
+      appId: "1:552560378402:web:d96ced8dec89e9bf74807b",
+      measurementId: "G-L8LKG8HNN1"
+    };
+
+    function redirectToNewPage() {
+      setTimeout(() => {
+        console.log("User logged out successfully!");
+        window.location.href = newPageUrl;
+      }, 1000);
+    }
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    const newPageUrl = "index.html";
+    let username = "john";
+
+    function displayUsername(username) {
+      const usernamePlaceholder = document.getElementById('usernamePlaceholder');
+      if (usernamePlaceholder) {
+        usernamePlaceholder.innerText = username;
+      }
+    }
+
+    document.getElementById('logout').addEventListener('click', (e) => {
+      signOut(auth).then(() => {
+        alert("User " + username + " logged out successfully!");
+        redirectToNewPage();
+      }).catch((error) => {
+        alert(error.message);
+      });
+    });
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        username = user.displayName || user.email;
+        displayUsername(username);
+      } else {
+        displayUsername("Guest");
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get('name');
+      document.getElementById('userName').textContent = name;
+    });
+  </script>
+  <script>
+    // Function to get URL parameters
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Get username from URL query parameter
+    var usernam = getParameterByName('username');
+    if (usernam) {
+      document.getElementById('usernameDisplay').textContent = usernam;
+    }
+  </script>
+  <script>
+    // JavaScript to highlight current page in navigation
+    document.addEventListener("DOMContentLoaded", function () {
+      var currentUrl = window.location.href;
+      var menuLinks = document.querySelectorAll(".js-clone-nav li a");
+
+      menuLinks.forEach(function (link) {
+        if (link.href === currentUrl) {
+          link.parentNode.classList.add("current");
+        }
+      });
+    });
+
+
+
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollButton = document.getElementById('scrollButton');
+
+      if (scrollButton) {
+        scrollButton.addEventListener('click', function () {
+          const sectionToScroll = document.querySelector('.jaya_co-section');
+
+          if (sectionToScroll) {
+            sectionToScroll.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+    });
+  </script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
+<!--
+const jobList = [
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1577327/Data-Scientist---Internship-Opportunities",
+    target: "_blank",
+    className: "filterDiv Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Data Scientist",
+    description: "At Microsoft, Interns work on real-world projects in collaboration with teams across the world, while having fun along the way. You’ll be empowered to build community, explore your passions and achieve your goals.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.google.com/about/careers/applications/jobs/results/112527832824849094-student-researcher-phd-2023?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India",
+    target: "_blank",
+    className: "filterDiv Google",
+    imgSrc: "https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180",
+    imgAlt: "Flickr Creative Commons",
+    title: "Student Researcher, PhD, 2023",
+    description: "Participate in research to develop solutions for real-world, large-scale problems.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2415130/product-management-intern",
+    target: "_blank",
+    className: "filterDiv Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Product Management Intern",
+    description: "Product Managers (PM) interns at Amazon partner with cross-functional teams to develop ideas from conception to execution, contribute to business models and marketing plans, analyze success metrics, and make recommendations for growth.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.cognizant.com/studentandinterns/global/en/job/00039714235/Programmer-Analyst-Trainee",
+    target: "_blank",
+    className: "filterDiv Cognizant",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "PROGRAMMER ANALYST TRAINEE",
+    description: "Understanding details of the quality processes and practices followed in the project from different sources. Attend any Knowledge Transition sessions conducted within the project to gain proficiency in project level knowledge.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.cognizant.com/studentandinterns/global/en/job/00043576146/Trainee-Junior-Data-Analyst",
+    target: "_blank",
+    className: "filterDiv Cognizant",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.7qahWimcy2neSZRN1-4EdgHaEI&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "TRAINEE - JUNIOR DATA ANALYST",
+    description: "Perform coding activities on the assigned project with timelines and efficiency. Import uncoded terms in database and export coded medical terms from coding platform.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2407881/c-software-engineer-amazon-devices-and-services",
+    target: "_blank",
+    className: "filterDiv Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "C++ Software Engineer, Amazon Devices and Services",
+    description: "As a Software Engineer on this team, you will define and build innovative consumer product experiences with a direct impact on the design, architecture, and implementation of flagship products that customers love and use every day.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.google.com/about/careers/applications/jobs/results?src=Online%2FGoogle%20Website%2FByF&utm_source=Online%20&utm_medium=careers_site%20&utm_campaign=ByF&company=Fitbit&company=Google&company=YouTube&distance=50&employment_type=INTERN&location=India",
+    target: "_blank",
+    className: "filterDiv Google",
+    imgSrc: "https://tse1.mm.bing.net/th?id=OIP.bx0KqNPSKCXf3rcXFXrKPwHaCu&pid=Api&P=0&h=180",
+    imgAlt: "Flickr Creative Commons",
+    title: "Software Engineering Intern, Summer 2024",
+    description: "The Software Engineering Internship program will give you an opportunity to work on computer science solutions, develop scalable, distributed software systems, and also collaborate on multitudes of smaller projects that have universal appeal.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1577325/Software-Engineering---Internship-Opportunities",
+    target: "_blank",
+    className: "filterDiv Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Software Engineering",
+    description: "Software engineers (SWEs) work with teammates to solve problems and build innovative software solutions. You are passionate about customers and product quality, and you provide technical guidance to Program Managers as they consider user needs and product requirements.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://jobs.careers.microsoft.com/global/en/job/1594665/Software-Engineer-II",
+    target: "_blank",
+    className: "filterDiv Microsoft",
+    imgSrc: "https://tse4.mm.bing.net/th?id=OIP.uHrDUCEbFVxRTdSSRjC5_gHaCu&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "Software Engineer II",
+    description: "Working with big data by training, extending, and shipping the capability of deep learning models to provide compelling experiences across our products.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.amazon.jobs/en-gb/jobs/2393244/l3-channel-team-lead",
+    target: "_blank",
+    className: "filterDiv Amazon",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.dYPwlDbhi0a-cA0ubfYeJgHaDH&pid=Api&P=0&h=180",
+    imgAlt: "GraphicBurger",
+    title: "L3-Channel Team Lead",
+    description: "Account Identification & Acquisition: Market mapping and Identification of potential retail stores for time bound Acquisition, induction and onboarding of new accounts (I.H.S stores) in the assigned territory.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://careers.swiggy.com/#/careers?src%3Dcareers=&location%3DHyderabad%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiSHlkZXJhYmFkIn19=",
+    target: "_blank",
+    className: "filterDiv Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "MANAGER, INTERNAL COMMUNICATIONS",
+    description: "Work closely with business leaders and support teams to create compelling communication materials that effectively convey key messages to a wide variety of internal audiences.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://www.swiggy.com/careers",
+    target: "_blank",
+    className: "filterDiv Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "Analyst, Data Services",
+    description: "Create, maintain, and optimize dashboards, reports, and KPIs that track performance and drive strategic decision-making across the organization.",
+    tag: "Apply now"
+  },
+  {
+    href: "https://jobs.swiggy.com/#/careers?src%3Dcareers=&location%3DHyderabad%26p%3DeyJwYWdlVHlwZSI6ImpkIiwiY3ZTb3VyY2UiOiJjYXJlZXJzIiwicmVxSWQiOjEwMjc2LCJyZXF1ZXN0ZXIiOnsiaWQiOiIiLCJjb2RlIjoiIiwibmFtZSI6IiJ9LCJwYWdlIjoiY2FyZWVycyIsImJ1ZmlsdGVyIjotMSwiY3VzdG9tRmllbGRzIjp7ImxvY2F0aW9uIjoiSHlkZXJhYmFkIn19=",
+    target: "_blank",
+    className: "filterDiv Swiggy",
+    imgSrc: "https://tse3.mm.bing.net/th?id=OIP.qtXCAh8-n0-4IhmXqmpuiQAAAA&pid=Api&P=0&h=180",
+    imgAlt: "Life of Vids",
+    title: "Analyst, Planning & Strategy",
+    description: "Conduct in-depth analysis of data, issues, and challenges to identify trends, root causes, and potential business implications.",
+    tag: "Apply now"
+  }
+];
+
+
+-->
